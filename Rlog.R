@@ -9,3 +9,8 @@ o.dist <- dist(obj4[,-19])
 o.scal <- cmdscale(o.dist, k = 2)
 plot(o.scal, type = "n")
 text(o.scal, lab = as.character(obj4[,19]))
+axis(1, at=500, tck=1)
+
+## Observation nr
+plot(o.scal, type = "n")
+text(o.scal, lab = rownames(obj4),cex=0.7)
