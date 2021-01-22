@@ -36,3 +36,16 @@ tti <- 16 # Mn_sza
 tti <- 17 # C_sza
 
 boxplot(obj4[, tti] ~ grp, main = colnames(obj4)[tti])
+
+
+## -Ca
+o.dist <- dist(obj4[,-c(3,12,19)])
+o.scal <- cmdscale(o.dist, k = 2)
+plot(o.scal, type = "n")
+text(o.scal, lab = as.character(obj4[,19]))
+
+## -Ca, -C
+o.dist <- dist(obj4[,-c(3,12,8,17,19)])
+o.scal <- cmdscale(o.dist, k = 2)
+plot(o.scal, type = "n")
+text(o.scal, lab = as.character(obj4[,19]))
