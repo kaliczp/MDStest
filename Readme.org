@@ -1,0 +1,9 @@
+* <2021-01-22 p>
+
+Két csoport
+- károsított
+- nem károsított
+
+Egy módszert kellene találni, ami bizonyítja,
+hogy a mért paraméterek segítségével elkülöníthető
+a két csoport.
